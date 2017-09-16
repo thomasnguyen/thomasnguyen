@@ -302,6 +302,7 @@ header > h3{
 .about__section{
 	width:100%;
 	display:flex;
+	flex-wrap: wrap;
 	padding-top:40px;
 }
 
@@ -329,6 +330,7 @@ p.skills{
 
 .contact__section{
 	display:flex;
+	flex-wrap: wrap;
 	margin-bottom:75px;
 }
 
@@ -406,12 +408,18 @@ p.skills{
 	nav.mobile{
 		display:flex;
 	}
+
 	.about__section__picture{
-		display:none;
+		flex-grow:1;
+		width:100%;
+		text-align: center;
 	}
 
 	.about__section__description{
+		flex-flow: 1;
 		width:100%;
+		margin-left:10px;
+		margin-top:30px;
 	}
 
 	.title > p{
@@ -434,5 +442,12 @@ p.skills{
 		height:25px;
 		margin-top:2px;
 	}
+	.contact__section__description{
+		width:100%;
+		flex-grow: 1;
+	}
+	.contact__section__twitter{
+		margin-right:100px;
+	}
 }
-
+`
