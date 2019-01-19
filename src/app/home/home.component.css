@@ -1,0 +1,30 @@
+/* Intro */
+
+.hero {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me {
+    margin-top: 25px;
+    width: 50%;
+}
+
+.about-me>p.sub-text {
+    font-size: .8em;
+    font-weight: 200;
+    color: #484848;
+    margin-bottom: -15px;
+}
+
+.about-me>p.main-text {
+    font-size: 1.1em;
+}
+
+.hero-picture {
+    width: 365px;
+    height: 330px;
+    background: #006BE8;
+    border-radius: 30px;
+}
