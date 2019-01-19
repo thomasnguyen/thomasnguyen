@@ -1,0 +1,14 @@
+.headerComponent {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav a {
+    padding: 24px;
+}
