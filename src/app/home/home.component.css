@@ -112,3 +112,13 @@ section#portfolio {
     padding-bottom: 0.7em;
     font-size: 0.6em;
 }
+
+.portfolio-item__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item__preview>img {
+    height: 230px;
+}
