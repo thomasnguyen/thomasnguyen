@@ -69,6 +69,18 @@ section#portfolio {
     height: 300px;
 }
 
+.portfolio-item__alternate {
+    flex-direction: row-reverse;
+}
+
+.portfolio-item__alternate>.portfolio-item__heading {
+    border-radius: 0px 30px 30px 0px;
+}
+
+.portfolio-item__alternate>.portfolio-item__preview {
+    border-radius: 30px 0px 0px 30px;
+}
+
 .portfolio-item__heading {
     width: 335px;
     background: white;
