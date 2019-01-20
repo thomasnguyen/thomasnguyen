@@ -9,6 +9,7 @@ import { WorkComponent } from './work/work.component';
 import { BooksComponent } from './books/books.component';
 import { BlogComponent } from './blog/blog.component';
 import { HeaderComponent } from './header/header.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     WorkComponent,
     BooksComponent,
     BlogComponent,
-    HeaderComponent
+    HeaderComponent,
+    UnderConstructionComponent
   ],
   imports: [
     BrowserModule,
