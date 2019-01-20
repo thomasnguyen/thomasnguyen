@@ -37,7 +37,7 @@
 
 section#portfolio {
     width: 100%;
-    height: 300px;
+    height: 500px;
     background: #222222;
 }
 
@@ -56,4 +56,41 @@ section#portfolio {
     font-weight: 300;
     font-size: .8em;
     color: #E6E6E6;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+.portfolio-item__heading {
+    width: 335px;
+    background: white;
+    border-radius: 30px 0px 0px 30px;
+    padding: 30px;
+}
+
+.portfolio-item__preview {
+    width: calc(100% - 335px);
+    background: #191919;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.portfolio-item__title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.portfolio-item__description {
+    font-size: 14px;
+}
+
+.portfolio-item__subtitle {
+    font-size: 12px;
 }
