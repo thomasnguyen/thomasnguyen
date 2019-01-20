@@ -37,7 +37,7 @@
 
 section#portfolio {
     width: 100%;
-    height: 500px;
+    height: 800px;
     background: #222222;
 }
 
@@ -66,7 +66,7 @@ section#portfolio {
 .portfolio-item {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 300px;
 }
 
 .portfolio-item__heading {
@@ -92,5 +92,7 @@ section#portfolio {
 }
 
 .portfolio-item__subtitle {
+    margin-top: 80px;
+    padding-bottom: 15px;
     font-size: 12px;
 }
