@@ -1,7 +1,7 @@
 /* Intro */
 
 #intro {
-    padding: 3em 0;
+    padding: 2em 0;
 }
 
 .hero {
@@ -14,6 +14,7 @@
     margin: 2em 0;
     width: 50%;
 }
+
 
 .about-me>p.sub-text {
     font-size: .8em;
@@ -53,10 +54,10 @@ section#portfolio {
     width: 100%;
     padding: 2em;
     background: #222222;
+    padding-bottom:4em;
 }
 
 #portfolio>div>header {
-    padding-bottom: 1em;
     text-align: center;
 }
 
@@ -80,8 +81,9 @@ section#portfolio {
 .portfolio-item {
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 18em;
 }
+
 
 .portfolio-item__alternate {
     flex-direction: row-reverse;
@@ -95,8 +97,10 @@ section#portfolio {
     border-radius: 30px 0px 0px 30px;
 }
 
+
+
 .portfolio-item__heading {
-    width: 335px;
+    width: 20em;
     background: white;
     border-radius: 30px 0px 0px 30px;
     padding: 1.5em;
@@ -106,13 +110,14 @@ section#portfolio {
 }
 
 .portfolio-item__preview {
-    width: calc(100% - 335px);
+    width: calc(100% - 20em);
     background: #191919;
     border-radius: 0px 30px 30px 0px;
 }
 
+
 .portfolio-item__title {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 500;
 }
 
@@ -132,5 +137,54 @@ section#portfolio {
 }
 
 .portfolio-item__preview>img {
-    height: 230px;
+    height: 10em;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+    .about-me  {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .portfolio-item__heading{
+        width:15em;
+    }
+
+    .portfolio-item__preview {
+        width: calc(100% - 10em);
+    }
+
+
+    
+}
+@media screen and (max-width: 500px) {
+
+    .portfolio-container {
+        padding:0;
+    }
+    .portfolio-item   {
+        flex-direction: column-reverse;
+    }
+    
+    .portfolio-item__heading,.portfolio-item__preview{
+        width:100%;
+    }
+
+    .portfolio-item__preview {
+        background:none;
+    }
+
+    .portfolio-item__preview > img {
+        width:100%;
+        height:100%;
+    }
+
+    .portfolio-item__heading {
+        border-radius:0;
+        padding-bottom:4em;
+    }
+
 }

@@ -2,3 +2,10 @@
     width: 500px;
     margin: auto;
 }
+
+@media screen and (max-width: 600px) {
+    .underConstruction {
+        width: 100%;
+        padding: 20px;
+    }
+}
