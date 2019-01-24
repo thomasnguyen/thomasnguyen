@@ -1,20 +1,23 @@
-h1 > a {
-    color:#151515;
+h1>a {
+    color: #151515;
 }
 
 .headerComponent {
     display: flex;
     justify-content: space-between;
-    padding-top:0;
-    padding-bottom:0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-
     justify-content: space-between;
+}
+
+.active {
+    font-weight: 600;
 }
 
 nav a {
@@ -27,9 +30,7 @@ nav a:hover {
     color: #006BE8;
 }
 
-
 @media screen and (max-width: 400px) {
-    
     nav a {
         padding: 0.5em;
     }
