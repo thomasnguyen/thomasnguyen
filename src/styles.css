@@ -21,6 +21,11 @@
     display: none;
 }
 
+::selection {
+    color: white;
+    background: #006BE8;
+}
+
 /* fonts Styles */
 
 body {

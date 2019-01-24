@@ -26,13 +26,14 @@
 .sub-text {
     font-size: 1.2em;
     font-weight: 200;
-    color: #484848;
+    color: #3c3c3c;
     margin: 0;
 }
 
 .main-text {
     font-size: 1.1em;
-    margin: 0 0 2.2em 0;
+    margin: 0 0 1.8em 0;
+    padding-right: 1em;
 }
 
 .main-text>em {
@@ -43,7 +44,8 @@
 
 .secondary-text {
     font-size: .8em;
-    font-weight: 200;
+    line-height: 2;
+    font-weight: 300;
     color: #484848;
 }
 
