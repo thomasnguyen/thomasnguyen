@@ -2,15 +2,13 @@
 
 * {
     font-family: 'Work Sans', sans-serif;
-    
 }
 
-
-* , *:before, *:after{ 
-    box-sizing:border-box; 
-    -moz-box-sizing:border-box; 
-    -webkit-box-sizing:border-box; 
-    -ms-box-sizing:border-box;
+*, *:before, *:after {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
 }
 
 .container {
@@ -22,8 +20,6 @@
 .hidden {
     display: none;
 }
-
-
 
 /* fonts Styles */
 
