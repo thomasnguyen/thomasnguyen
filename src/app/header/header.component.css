@@ -69,11 +69,15 @@ nav.mobile {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #cdcdcd;
+    background: #484848;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+#menuToggle span:hover {
+    background: #006BE8;
 }
 
 #menuToggle span:first-child {
@@ -92,7 +96,7 @@ nav.mobile {
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: #262626;
 }
 
 /*
@@ -117,34 +121,40 @@ nav.mobile {
  * at the top left of the screen
  */
 
-/* #menu {
-    position: absolute;
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background: gray;
     width: 300px;
-    margin: -100px 0 0 -50px;
-    padding: 50px;
-    padding-top: 125px;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-} */
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
 
-/* #menu li {
+#menu li {
     padding: 10px 0;
     font-size: 22px;
-} */
+    color: white;
+}
+
+#menu>a {
+    z-index: 10;
+    color: white;
+}
 
 /*
  * And let's slide it in from the left
  */
 
 #menuToggle input:checked~ul {
-    transform: none;
+    opacity: 1;
 }
 
 @media screen and (max-width: 480px) {
-    nav a {
+    nav {
         display: none;
     }
     nav.mobile {
