@@ -1,3 +1,15 @@
+<div class="mobile-nav-list" [ngClass]="{open: openMobileNav}">
+  <div class="mobile-nav-container">
+    <a (click)="toggleNav()" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:
+        true}">Home</a>
+    <br>
+    <a (click)="toggleNav()" routerLink="/about" [routerLinkActive]="['active']">About</a> <br>
+    <a (click)="toggleNav()" routerLink="/work" [routerLinkActive]="['active']">Portfolio</a> <br>
+    <a (click)="toggleNav()" routerLink="/books" [routerLinkActive]="['active']">Book Log</a>
+  </div>
+
+</div>
+
 <div class='headerComponent container'>
   <div>
     <h1>
@@ -12,30 +24,11 @@
     <a routerLink="/books" [routerLinkActive]="['active']">Book Log</a>
   </nav> <!-- Nav -->
   <nav class="mobile">
-    <div id="menuToggle">
-      <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-      <input type="checkbox" />
-
-      <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
+    <div id="nav-icon3" [ngClass]="{open: openMobileNav}" (click)="toggleNav()">
       <span></span>
       <span></span>
       <span></span>
-
-      <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a>fsdf</a>
-      </ul>
+      <span></span>
     </div>
-  </nav>
+  </nav> <!-- Mobile Nav -->
 </div>

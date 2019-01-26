@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  openMobileNav = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleNav() {
+    this.openMobileNav = !this.openMobileNav;
   }
 
 }
