@@ -97,3 +97,40 @@ button:hover {
         width: 100%;
     }
 }
+
+/* layouts */
+
+.flex-container-x {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container-y {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+section.full-width {
+    width: 100%;
+    padding: 2em;
+    padding-bottom: 4em;
+}
+
+section.blue {
+    background: #006BE8;
+    color: white;
+}
+
+section.dark {
+    background: #171717;
+    color: white;
+}
+
+section.full-width>div>header {
+    text-align: center;
+}
