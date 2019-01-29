@@ -1,5 +1,5 @@
 h1>a {
-    color: #151515;
+    color: var( --main-text);
 }
 
 .headerComponent {
@@ -22,13 +22,13 @@ nav a.active {
 
 nav a {
     font-size: 0.8em;
-    color: #151515;
+    color: var( --main-text);
     padding: 1.2em;
     font-weight: 300;
 }
 
 nav a:hover {
-    color: #006BE8;
+    color: var(--main-blue);
 }
 
 nav.mobile {
@@ -116,7 +116,7 @@ nav.mobile {
     right: 0;
     width: 50%;
     height: 100%;
-    background: #006BE8;
+    background: var(--main-blue);
     display: none;
     text-align: center;
     padding-top: 7em;

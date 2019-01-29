@@ -1,7 +1,7 @@
 /* GLOBALS */
 
 .blue-font {
-    color: #006BE8;
+    color: var(--main-blue);
 }
 
 /* Intro */
@@ -59,7 +59,7 @@
     /* TEMP:TODO */
     width: 365px;
     height: 330px;
-    background: #006BE8;
+    background: var(--main-blue);
     border-radius: 30px;
 }
 

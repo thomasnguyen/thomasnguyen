@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
+/* Global Variables */
+
+:root {
+    --main-blue: #006BE8;
+    --main-text: #151515;
+    --dark-bg: #171717;
+}
+
 * {
     font-family: 'Work Sans', sans-serif;
 }
@@ -23,7 +31,7 @@
 
 ::selection {
     color: white;
-    background: #006BE8;
+    background: var(--main-blue);
 }
 
 /* fonts Styles */
@@ -58,11 +66,11 @@ a {
 }
 
 a, a:visited {
-    color: #006BE8;
+    color: var(--main-blue);
 }
 
 a:hover {
-    color: #0082EE;
+    color: var(--main-blue);
 }
 
 /* Button Styles */
@@ -73,7 +81,7 @@ button {
     height: 40px;
     line-height: 40px;
     padding: 0 14px;
-    background: #006BE8;
+    background: var(--main-blue);
     border-radius: 4px;
     font-size: 15px;
     font-weight: 500;
@@ -122,12 +130,13 @@ section.full-width {
 }
 
 section.blue {
-    background: #006BE8;
+    background: var(--main-bg-color);
     color: white;
 }
 
 section.dark {
-    background: #171717;
+    background: var(--dark-bg);
+    ;
     color: white;
 }
 
