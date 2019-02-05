@@ -177,6 +177,9 @@ section#portfolio {
 }
 
 @media screen and (max-width: 500px) {
+    .about-picture {
+        display: none;
+    }
     .portfolio-container {
         padding: 0;
     }
