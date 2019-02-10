@@ -9,7 +9,7 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'work', component: UnderConstructionComponent },
+  { path: 'work', component: WorkComponent },
   { path: 'books', component: UnderConstructionComponent }
 ];
 

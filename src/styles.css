@@ -130,16 +130,22 @@ section.full-width {
 }
 
 section.blue {
-    background: var(--main-bg-color);
+    background: var(--main-blue);
     color: white;
 }
 
 section.dark {
     background: var(--dark-bg);
-    ;
     color: white;
 }
 
 section.full-width>div>header {
     text-align: center;
+}
+
+button.white{
+    background:white;
+    color:black;
+    margin:auto;
+    text-align:center;
 }
