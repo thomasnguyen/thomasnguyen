@@ -662,9 +662,9 @@ section {
        home
     ==============
 */
-.resume-home {
+/* .resume-home {
   height: 100vh;
-}
+} */
 
 .resume-home .resume-inner {
   padding: 140px 0px;
@@ -1947,5 +1947,11 @@ section {
   display: grid;
   place-items: center;
   border: solid 1.4px rgba(42, 42, 42, 0.15);
+}
+
+a.blue-link{
+  color: #006be8;
+  font-weight:700;
+  opacity:1;
 }
 /*# sourceMappingURL=styles.css.map */
